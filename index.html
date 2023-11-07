@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - SVG Fireworks</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="bg"></div>
+<svg stroke="#fff" stroke-linecap="round">
+  <g class="stage">
+    <rect width="100%" height="100%" fill="rgba(0,0,0,0)" stroke="none"/>
+  </g>
+  <g class="toggle" style="cursor:pointer;user-select:none">
+    <path d="M100,20 118,20" stroke-width="25"/>
+    <path class="knob" d="M100,20 100,20" stroke-width="20" stroke="#000"/>
+    <text class="txt1" fill="#fff" x="11" y="26">Manual</text>
+    <text class="txt2" fill="#fff" x="144" y="26" opacity="0.3">Auto</text>
+  </g>
+</svg>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
